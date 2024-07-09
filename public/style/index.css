@@ -1,0 +1,63 @@
+body{
+    background-color: #89ABE3;
+    color: #741d97;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    height: 6rem;
+    font-size: 2rem;
+    font-stretch: ultra-expanded;
+    align-items: center;
+    justify-content: center;
+}
+.products{
+    padding: 3rem 18rem 3px 18rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+img {
+    height: 10rem;
+    border-radius: 2rem;
+}
+.pcard{
+    background-color: #741d97;
+    height: 15rem;
+    width: 36rem;
+    display: flex;
+    align-items: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    color:white;
+}
+.priceO{
+    display: flex;
+    margin-left: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    height: 2.5rem;
+    border: none;
+    color:white;
+    border-radius: 1rem;
+    background-color: #89ABE3;
+    margin-left: 5.5rem;
+
+}
+.imgO{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+}
+.av{
+    margin-left: 3.5rem;
+}

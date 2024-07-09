@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmala Farms</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="ol">
+    <div class="heading">
+        <h1>NIRMALA FARMS</h1>
+    </div>
+    <div class="products">
+          <%if(locals.products){ for(var i=0;i<products.length;i++){%>
+           <div class="pcard">
+                   <div class="imgO">
+                    <img src="imgs/<%=products[i].name%>.jpg" alt="">
+                   </div>
+                   <div class="priceO">
+                      <h2><%=products[i].name%></h2>
+                      <h3><%=products[i].price%>rs/kg</h5>
+                   </div>  
+                   <button id="btn">Add to card</button>
+           </div>
+           <%}%>
+           <%}%>
+    </div>
+    </div>
+</div>
+<div style="display: flex; height: 6rem; align-items: center; justify-content: center;">
+    <button onclick="window.location.href='//anuraggoud16.github.io/Portfolio/';" style="background-color: blueviolet;">PROCEED TO PURCHASE</button>
+</div>
+</body>
+<script>
+    document.getElementById("btn").addEventListener("click",function(e){
+        alert("Added to cart");
+    });
+</script>
+</html>
